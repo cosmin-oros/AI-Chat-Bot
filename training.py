@@ -45,7 +45,7 @@ classes = sorted(set(classes))
 
 # save them into a file for later on
 pickle.dump(words, open('words.pk1', 'wb'))
-pickle.dump(words, open('classes.pk1', 'wb'))
+pickle.dump(classes, open('classes.pk1', 'wb'))
 
 training = []
 output_empty = [0]*len(classes)
@@ -84,7 +84,7 @@ sgd = gradient_descent_v2.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 # compile the model
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
 
-model.fit(np.array(training_x), np.array(training_y), epochs=200, batch_size=5, verbose=1)
-model.save('chatbot_model.model')
+hist = model.fit(np.array(training_x), np.array(training_y), epochs=200, batch_size=5, verbose=1)
+model.save('chatbot_model.h5', hist)
 
 print("Done")
