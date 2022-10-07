@@ -9,7 +9,7 @@ nltk.download('omw-1.4')
 from nltk.stem import WordNetLemmatizer
 from tensorflow.python.keras.models import Sequential
 from tensorflow.python.keras.layers import Dense, Activation, Dropout
-from tensorflow.python.keras.optimizers import *
+from tensorflow.python.keras.optimizers import gradient_descent_v2
 
 lemmatizer = WordNetLemmatizer()
 
@@ -68,3 +68,23 @@ training = np.array(training)
 
 training_x = list(training[:, 0])
 training_y = list(training[:, 1])
+
+# sequential model for neural network
+model = Sequential()
+# input layer with 128 neurons, activation rectified linear unit
+model.add(Dense(128, input_shape=(len(training_x[0]),), activation='relu'))
+# prevent over fitting
+model.add(Dropout(0.5))
+model.add(Dense(64, activation='relu'))
+model.add(Dropout(0.5))
+# softmax scales the results so that all add up to 1
+model.add(Dense(len(training_y[0]), activation='softmax'))
+
+sgd = gradient_descent_v2.SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
+# compile the model
+model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
+
+model.fit(np.array(training_x), np.array(training_y), epochs=200, batch_size=5, verbose=1)
+model.save('chatbot_model.model')
+
+print("Done")
