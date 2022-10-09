@@ -64,9 +64,14 @@ def get_response(intents_list, intents_json):
 
 
 print("Bot is live !!!")
+print("Type 'goodbye' to exit out of the conversation!")
+print("")
 
-while True:
+condition = ""
+
+while condition.lower() != "goodbye":
     message = input("You: ")
     ints = predict_class(message)
     res = get_response(ints, intents)
+    condition = message
     print(res)

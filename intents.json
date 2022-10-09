@@ -5,5 +5,9 @@
 
   {"tag": "goodbye",
   "patterns":  ["goodbye", "see you later", "have a good day", "bye", "adios"],
-  "responses": ["Bot: Goodbye!", "Bot: Talk to you later!", "Bot: Bye!"]}
+  "responses": ["Bot: Goodbye!", "Bot: Talk to you later!", "Bot: Bye!"]},
+
+  {"tag": "age",
+  "patterns":  ["how old are you?", "age", "birth", "when were you created?"],
+  "responses": ["Bot: I'm less than a year old! :)", "Bot: I was originally created in October 2022!", "Bot: Younger than you! :)"]}
 ]}
