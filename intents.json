@@ -7,7 +7,29 @@
   "patterns":  ["goodbye", "see you later", "have a good day", "bye", "adios"],
   "responses": ["Bot: Goodbye!", "Bot: Talk to you later!", "Bot: Bye!"]},
 
+  {"tag": "robot",
+  "patterns":  ["Are you a bot?", "Am I talking to a chatbot?", "Are you a real person?", "Am I talking to a chatbot?"],
+  "responses": ["Bot: I am a chatbot!", "Bot: I'm a chatbot!", "Bot: I for sure am a bot!"]},
+
+  {"tag": "name",
+  "patterns":  ["What is your name?", "name", "how can I call you?"],
+  "responses": ["Bot: I am the Poli Chatbot!", "Bot: Poli Chatbot!", "Bot: You can call me Poli Chatbot! :)"]},
+
+  {"tag": "how_it_works",
+  "patterns":  ["How does it work?", "How can I find?", "Where is?", "find my classroom"],
+  "responses": ["Bot: Tell me the specific location you want to find!", "Bot: Tell me the classroom that you want to find!",
+    "Bot: Type the classroom name that you want to find!"]},
+
+  {"tag": "how_are_you",
+  "patterns":  ["How are you?", "How are you feeling?", "How are you doing?"],
+  "responses": ["Bot: Oh, I'm doing wonderfully well!", "Bot: Glad you asked! I'm feeling amazing!", "Bot: Doing great, thanks for asking"]},
+
   {"tag": "age",
   "patterns":  ["how old are you?", "age", "birth", "when were you created?"],
-  "responses": ["Bot: I'm less than a year old! :)", "Bot: I was originally created in October 2022!", "Bot: Younger than you! :)"]}
+  "responses": ["Bot: I'm less than a year old! :)", "Bot: I was originally created in October 2022!", "Bot: Younger than you! :)"]},
+
+  {"tag": "library",
+  "patterns":  ["study place", "borrow books", "I need a quiet study location", "I need a lecture room", "exam books",
+  "group study"],
+  "responses": ["Bot: Go to Biblioteca UPT!", "Bot: Try Biblioteca UPT!", "Bot: You can find that at Biblioteca UPT!"]}
 ]}
