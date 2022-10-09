@@ -1,9 +1,9 @@
 {"intents":  [
   {"tag": "greetings",
   "patterns": ["hello", "hey", "hi", "good day", "greetings", "what's up", "how is it going?"],
-  "responses": ["Hello!", "Hey!", "What can I do for you? "]},
+  "responses": ["Bot: Hello!", "Bot: Hey!", "Bot: What can I do for you? "]},
 
   {"tag": "goodbye",
   "patterns":  ["goodbye", "see you later", "have a good day", "bye", "adios"],
-  "responses": ["Goodbye!", "Talk to you later!", "Bye!"]}
+  "responses": ["Bot: Goodbye!", "Bot: Talk to you later!", "Bot: Bye!"]}
 ]}
