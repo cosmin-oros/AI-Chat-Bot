@@ -8,25 +8,34 @@
   "responses": ["Bot: Goodbye!", "Bot: Talk to you later!", "Bot: Bye!"]},
 
   {"tag": "robot",
-  "patterns":  ["Are you a bot?", "Am I talking to a chatbot?", "Are you a real person?", "Am I talking to a chatbot?"],
+  "patterns":  ["are you a bot?", "am I talking to a chatbot?", "are you a real person?", "am I talking to a chatbot?"],
   "responses": ["Bot: I am a chatbot!", "Bot: I'm a chatbot!", "Bot: I for sure am a bot!"]},
 
   {"tag": "name",
-  "patterns":  ["What is your name?", "name", "how can I call you?"],
+  "patterns":  ["what is your name?", "name", "how can I call you?"],
   "responses": ["Bot: I am the Poli Chatbot!", "Bot: Poli Chatbot!", "Bot: You can call me Poli Chatbot! :)"]},
 
   {"tag": "how_it_works",
-  "patterns":  ["How does it work?", "How can I find?", "Where is?", "find my classroom"],
+  "patterns":  ["how does it work?", "how can I find?", "where is?", "find my classroom"],
   "responses": ["Bot: Tell me the specific location you want to find!", "Bot: Tell me the classroom that you want to find!",
     "Bot: Type the classroom name that you want to find!"]},
 
   {"tag": "how_are_you",
-  "patterns":  ["How are you?", "How are you feeling?", "How are you doing?"],
-  "responses": ["Bot: Oh, I'm doing wonderfully well!", "Bot: Glad you asked! I'm feeling amazing!", "Bot: Doing great, thanks for asking"]},
+  "patterns":  ["how are you?", "how are you feeling?", "how are you doing?", "what's up?"],
+  "responses": ["Bot: Oh, I'm doing wonderfully well!", "Bot: Glad you asked! I'm feeling amazing!", "Bot: Doing great, thanks for asking!"]},
 
   {"tag": "age",
   "patterns":  ["how old are you?", "age", "birth", "when were you created?"],
   "responses": ["Bot: I'm less than a year old! :)", "Bot: I was originally created in October 2022!", "Bot: Younger than you! :)"]},
+
+  {"tag": "contact",
+  "patterns":  ["email", "how can I contact you?", "contact", "mail", "how can i reach you?"],
+  "responses": ["Bot: Contact my creator at cosmin.oros@student.upt.ro!", "Bot: My creator's email: cosmin.oros@student.upt.ro!"]},
+
+  {"tag": "creation",
+  "patterns":  ["creation", "how were you made?", "how were you invented?", "in what programming language are you coded?"],
+  "responses": ["Bot: My script is written in python!", "Bot: I've been created using neural networks and natural language processing in python!",
+  "Bot: Check the source code at https://github.com/cosmin-oros/AI-Chat-Bot"]},
 
   {"tag": "library",
   "patterns":  ["study place", "borrow books", "I need a quiet study location", "I need a lecture room", "exam books",
