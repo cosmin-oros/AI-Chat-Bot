@@ -32,6 +32,10 @@
   "patterns":  ["email", "how can I contact you?", "contact", "mail", "how can i reach you?"],
   "responses": ["Bot: Contact my creator at cosmin.oros@student.upt.ro!", "Bot: My creator's email: cosmin.oros@student.upt.ro!"]},
 
+  {"tag": "website",
+  "patterns":  ["what's the website", "upt website", "where can i find more information"],
+  "responses": ["Bot: The official website is upt.ro!", "Bot: The place to find more information about the university is upt.ro!"]},
+
   {"tag": "creation",
   "patterns":  ["creation", "how were you made?", "how were you invented?", "in what programming language are you coded?"],
   "responses": ["Bot: My script is written in python!", "Bot: I've been created using neural networks and natural language processing in python!",
